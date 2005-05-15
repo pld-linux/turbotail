@@ -1,4 +1,5 @@
 Summary:	tail program using kernel DNOTIFY-api
+Summary(pl):	Program tail u¿ywaj±cy API j±dra DNOTIFY
 Name:		turbotail
 Version:	0.2
 Release:	0.1
@@ -14,6 +15,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A drop-in replacement for the original (GNU-)tail program which uses
 the (Linux-)kernel DNOTIFY-api instead of polling every second(!).
 
+%description -l pl
+Zamiennik oryginalnego programu (GNU-)tail u¿ywaj±cy API j±dra
+(Linuksa) DNOTIFY zamiast sprawdzania co sekundê.
+
 %prep
 %setup -q
 
@@ -23,8 +28,8 @@ the (Linux-)kernel DNOTIFY-api instead of polling every second(!).
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_bindir}
+
 install %{name} $RPM_BUILD_ROOT%{_bindir}
 
 %clean
