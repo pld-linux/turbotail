@@ -1,5 +1,5 @@
 Summary:	tail program using kernel DNOTIFY-api
-Summary(pl.UTF-8):   Program tail używający API jądra DNOTIFY
+Summary(pl.UTF-8):	Program tail używający API jądra DNOTIFY
 Name:		turbotail
 Version:	0.2
 Release:	0.1
