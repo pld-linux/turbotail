@@ -1,14 +1,14 @@
 Summary:	tail program using kernel DNOTIFY-api
 Summary(pl.UTF-8):	Program tail używający API jądra DNOTIFY
 Name:		turbotail
-Version:	0.2
-Release:	0.1
-Epoch:		0
+Version:	0.3
+Release:	1
 License:	GNU
 Group:		Applications/Text
-Source0:	http://www.vanheusden.com/Linux/%{name}-%{version}.tgz
-# Source0-md5:	24903c65622391e62f238218cfc5c2d7
+Source0:	http://www.vanheusden.com/turbotail/%{name}-%{version}.tgz
+# Source0-md5:	a4eecdd0cae9552f17cb1c540a08f6f2
 URL:		http://www.vanheusden.com/Linux/#logging
+BuildRequires:	fam-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
